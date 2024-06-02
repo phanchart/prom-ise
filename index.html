@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>พรรคพร้อม</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/444482863_931132752142202_8848490933988220723_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE3pIjLGGQKseKmH7cwM49nICtCZ7mHqLsgK0JnuYeou2LkmMryBOYFp5C57wH6hEBxqFE7vZM_ELS-q_tJZ1nf&_nc_ohc=k4m9Tu6chesQ7kNvgHOMTBQ&_nc_ht=scontent.fbkk5-7.fna&oh=00_AYCNvjtO-amTCDEgkn9ydBOMkmbJRICSYbodtaepvkRHdQ&oe=66624A7C"/>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="">หน้าแรก</a></li>
+      <li><a href="">สมาชิกพรรค</a></li>
+      <li><a href="">นโยบายพรรค</a></li>
+      <li><a href="">ข่าวสาร</a></li>
+      <li><a href="">เกี่ยวกับพรรค</a></li>
+    </ul>
+    <ul>
+      
+        <li class="logo-container">
+          <a class="logo-text">พรรคพร้อม</a> 
+          <div class="logo-wrapper">
+            <img class="logo-img" src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/444482863_931132752142202_8848490933988220723_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE3pIjLGGQKseKmH7cwM49nICtCZ7mHqLsgK0JnuYeou2LkmMryBOYFp5C57wH6hEBxqFE7vZM_ELS-q_tJZ1nf&_nc_ohc=k4m9Tu6chesQ7kNvgHOMTBQ&_nc_ht=scontent.fbkk5-7.fna&oh=00_AYCNvjtO-amTCDEgkn9ydBOMkmbJRICSYbodtaepvkRHdQ&oe=66624A7C" alt="">
+          </div>
+        </li>
+      
+      
+      <li class="hideOnMobile"><a href="">หน้าแรก</a></li>
+      <li class="hideOnMobile"><a href="">สมาชิกพรรค</a></li>
+      <li class="hideOnMobile"><a href="">นโยบายพรรค</a></li>
+      <li class="hideOnMobile"><a href="">ข่าวสาร</a></li>
+      <li class="hideOnMobile"><a href="">เกี่ยวกับพรรค</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display ='flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display ='flex'
+    }
+  </script>
+
+<div class="slideshow-container">
+  <div class="slideshow" data-transition="fade">
+   
+        <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
+     
+      <div class="slideshow--item">
+        <img src="picc.JPEG" />
+        <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
+        <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
+      </div>
+    
+    
+        <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+  
+      <div class="slideshow--item">
+        <img src="http://127.0.0.1:5500/htmlt2/img6%20(2).jpeg" />
+        <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
+        <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
+      </div>
+    
+
+        <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+
+      <div class="slideshow--item">
+        <img src="https://scontent.fbkk5-1.fna.fbcdn.net/v/t39.30808-6/441877456_122109437780324321_4685110636090524091_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE0-lAKBFIW-iXfnPOe2mT2R2iG19OlkvBHaIbX06WS8LCClBQ6FBfZ_AfK1laTlXfDNL-tU7nzuypjFUUi8WON&_nc_ohc=RTNuk1gPTzYQ7kNvgGL8DxO&_nc_ht=scontent.fbkk5-1.fna&oh=00_AYDyCUJ0_uwb1RGIvuGtW42IibvGa6dWzeh0u8eB5WqZxQ&oe=66627DCC" />
+        <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
+        <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="hero">
+    <div class="container">
+        <div class="hero-con">
+         <div class="hero-info">
+            <h3>วิสัยทัศน์พรรคพร้อม</h3>
+            <p>เราต้องการเป็นสภานักเรียนที่ตอบสนองความต้องการของนักเรียนทุกคน พรรคเรายังคงมุ่งมั่นที่จะเสนอนโยบายก้าวหน้า ส่งเสริมพัฒนาคุณภาพของโรงเรียน พรรคพร้อมมุ่งมั่นที่จะนำเสนอนโยบายที่ก้าวหน้า และสร้างประโยชน์ให้แก่โรงเรียน เราจะสร้างพรรคที่ทันสมัยและเป็นมิตรต่อทุกคน</p>
+            <br>
+            <br>
+            <a href="#" class="hero-btn">เพิ่มเติม</a>
+          </div>
+
+          <div class="hero-img">
+            <img src="https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/444485341_122109433790324321_3910867971727673938_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFrWMvSFxJLV4SfSuWuMVFNPwskc3NkQBE_CyRzc2RAESJuTsG0YmYYmVe_0HW6D2V2og0zeZxSd_AW-JMa5i69&_nc_ohc=Y0EwPYYN5uwQ7kNvgGMZ8Ei&_nc_ht=scontent.fbkk5-5.fna&oh=00_AYCfD_lJU2m-VdXKD3MtB2bHLcv2ZQfoxApY9Ol2-yQ5-g&oe=66625422" alt="">
+          </div>
+        </div>
+    </div>
+  </section>
+  
+</body>
+</html>
